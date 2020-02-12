@@ -44,6 +44,10 @@ It will run a development web server on your local computer which you can access
 
 If you followed all these steps correctly you should see a warm welcome from the page you just opened.
 
+![](./media/you-shall-not-pass.png)
+
+Because spoilers ahead.
+
 ## Part 1: Dealing with the basics
 
 In the first part we'll have a look on how to create a React component. We will try to create a simple list of articles with heading, tags and some content.
