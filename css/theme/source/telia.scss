@@ -1,0 +1,84 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@import url(../../lib/font/pebble/pebble.css);
+@import url(../../lib/font/helvetica-neue/helveticaneue.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #000;
+$subHeadingColor: #990AE3;
+$headingColor: #000;
+
+$mainFontSize: 42px;
+$mainFont: 'Helvetica Neue', Helvetica, sans-serif;
+$subHeadingFont: 'pebble', Helvetica, sans-serif;
+$headingFont: 'Helvetica Neue', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal {
+	section {
+		img {
+			border: none;
+			background: none;
+			box-shadow: none;
+		}
+	}
+
+	h1 {
+		font-family: $subHeadingFont;
+		color: $subHeadingColor;
+	}
+	
+}
+
+.person-gallery {	
+	height: 80%;
+
+	.mugshot {
+		display: inline-block;
+		.image {
+			height: 10rem;
+			display: block;
+		}
+		.name {
+			text-align: center;
+			font-size: 1rem;
+		}
+	}
+}

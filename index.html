@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/telia.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -25,8 +25,103 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-background-color="#990AE3">
+					<img class="stretch noborder" data-src="./img/Telia_Negative_White_Logo_RGB.png">
+				</section>
+				<section>
+					<h1>Who's here?</h1>
+					<div class="person-gallery">
+						<div class="mugshot">
+							<img class="image" data-src="https://wd3.myworkday.com/teliacompany/attachment/1055$66412/bndEZjBMQ0phbmdsYTBYby9YeDNJZjVRMmFPaEVPSE5lUkxFMHhCL0VDQ1UwdjMyRUU3c2Z6blh1ZVMvTW01a1FtWU9rVHRaS1RoWWpHL2pmanBINXlJMFI1YlVmVVlLQmpjaHdIU3RCNjlrU0xZQlRQaGU0VjN1ejZRb2N2cVo2cjJWd2t1TFhaeTl6V0RhZDNKMWVSMTdKZFRtRGkwVG9oQ253L3dqZmx6OEVwT3dKRjliajNrL2M0MUpSOWFVZkJTemtmbU02TEJXaUJCSHN0dnNZOEVUSmhicjViYlJweENFMWFsdVQ4UVBLSVJ3cHptaGVxOTVCc3Q1L3QzeGdZaTQrSDZZODV1QzNxNUk0TE9TeU1OWVlhaWZ3NmZzSElHTjErbDJDcWhxNjRMU0F3bGhLTWRlVmxXMFFHSkZtdERDVTR3T0krVSsySzR0L0VZaW5BPT0_b21zLWF0dGFjaG1lbnRzLzJmNjE3NTE1LTNiM2MtNDUyZC0xZTRmLTQwN2E0MTFlMWY1ZT8xNTgxNTAxNjAwMDAwP2ltYWdlL2pwZWc_SU1HXzU5MzdfRmFjZXR1bmVfMTktMDUtMjAxOS0xOS0wNy00NS5qcGVn">
+							<div class="name">Atle Sørvåg</div>
+						</div>
+						<div class="mugshot">
+							<img class="image" data-src="https://ca.slack-edge.com/T03PATMPV-U08RWL341-57575e0a1903-512">
+							<div class="name">Agnes Alexandersen</div>
+						</div>
+						<div class="mugshot">
+							<img class="image" data-src="https://files.slack.com/files-pri/T03PATMPV-FTYK1N9D4/10171248_616973701724831_8717476152772574663_n.jpg">
+							<div class="name">Marek Magdziak</div>
+						</div>
+						<div class="mugshot">
+							<img class="image" data-src="https://ca.slack-edge.com/T03PATMPV-U0BUMHRSP-d525b886f782-512">
+							<div class="name">Håkon Antonsen</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h1>Agenda</h1>
+					<ol>
+						<li>Company presentation</li>
+						<li>React basics</li>
+						<li>Component libraries</li>
+						<li>Fetching data</li>
+						<li>Making stuff happen</li>
+					</ol>
+				</section>
+				<section data-background-iframe="https://engineering.telia.no" data-preload>
+				</section>
+				<section data-background-color="#990AE3">
+					<h1>React</h1>
+				</section>
+				<section>
+					<h1>Concepts</h1>
+					<h3>Components</h3>
+					<h3>Props</h3>
+					<h3>JSX</h3>
+				</section>
+				<section data-markdown>
+                    <textarea data-template>
+                        # Components
+
+                        ```JSX
+                        function Component() {
+                            return(
+                                <h1>Hello World</h1>
+                            )
+                        }
+                        ```
+                    </textarea>
+				</section>
+				<section data-markdown>
+                    <textarea data-template>
+                        # Props
+
+                        ```JSX
+                        function Component(props) {
+                            return(
+                                <h1>{props.title}</h1>
+                            )
+                        }
+                        ```
+
+                        ```JSX
+                        <Component title="Hello World" />
+                        ```
+                    </textarea>
+				</section>
+				<section data-markdown>
+                    <textarea data-template>
+                        # Components
+
+                        ```JSX
+                        function Component() {
+                            return(
+                                <h1>Hello World</h1>
+                            )
+                        }
+                        ```
+                    </textarea>
+				</section>
+				<section data-background-color="#990AE3">
+					<h1>Component Library</h1>
+				</section>
+				<section data-background-color="#990AE3">
+					<h1>Fetching data</h1>
+				</section>
+				<section data-background-color="#990AE3">
+					<h1>Interaction</h1>
+				</section>
 			</div>
 		</div>
 
