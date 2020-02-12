@@ -83,3 +83,7 @@ In this final part we're going to have a look how we can do a simple paging with
 We will use the same API URL from 4th part.
 
 The complete version of the source code can be seen by switching to the `5-paging` branch by running `git checkout 5-paging` in your terminal.
+
+# Slides
+
+The slides presented during the workshop are accessible here: https://teliasoneranorge.github.io/ntnu-react-workshop/
