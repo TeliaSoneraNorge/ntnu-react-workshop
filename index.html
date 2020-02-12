@@ -65,7 +65,6 @@
 					<h1>React</h1>
 				</section>
 				<section>
-					<h1>Concepts</h1>
 					<h3>Components</h3>
 					<h3>Props</h3>
 					<h3>JSX</h3>
@@ -102,16 +101,37 @@
 				</section>
 				<section data-markdown>
                     <textarea data-template>
-                        # Components
+                        # Props
 
                         ```JSX
-                        function Component() {
+                        function Component({ title }) {
                             return(
-                                <h1>Hello World</h1>
+                                <h1>{title}</h1>
                             )
                         }
                         ```
+
+                        ```JSX
+                        <Component title="Hello World" />
+                        ```
                     </textarea>
+				</section>
+				<section data-markdown>
+                    <textarea data-template>
+                        # Props
+
+                        ```JSX
+                        const Component = ({ title }) =>
+                            <h1>{title}</h1>
+                        ```
+
+                        ```JSX
+                        <Component title="Hello World" />
+                        ```
+                    </textarea>
+                </section>
+				<section data-background-color="#990AE3">
+					<h1>React</h1>
 				</section>
 				<section data-background-color="#990AE3">
 					<h1>Component Library</h1>
