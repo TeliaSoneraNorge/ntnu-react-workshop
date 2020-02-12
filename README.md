@@ -1,5 +1,12 @@
 # ReactJS Workshop for NTNU
 
+## We want *you* for our summer internship positions
+Go to http://bit.ly/38gog90
+
+Or scan this:
+
+![QR-kode](./media/summerinterns20.png)
+
 ## Prerequisites
 
 ### GIT
