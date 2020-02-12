@@ -1,14 +1,15 @@
 import React from 'react';
+import { Heading, Tags, ShadowBox, Button } from '@telia/styleguide';
 
 const Article = ({ title, tags, children }) => (
-    <article>
-        <h2>{title}</h2>
-        <p>{tags.join(', ')}</p>
+    <ShadowBox>
+        <Heading level={1}>{title}</Heading>
+        <Tags color="dark-grey">{tags.map(tag => <Tags.Tag key={tag}>{tag}</Tags.Tag>)}</Tags>
         <div>
             {children}
         </div>
-        <hr />
-    </article>
+        <Button text="Read more" />
+    </ShadowBox>
 );
 
 export default Article;

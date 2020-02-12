@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import '@telia/styleguide/index.css';
+
 import Article from './article';
+import { Container } from '@telia/styleguide';
 
 const App = () => (
-    <div>
+    <Container>
         <Article title="My awesome article" tags={[ 'article', 'about', 'stuff' ]}>
             Here we can put the content of an article
             <p style={{ color: 'green' }}>Nested elements are also OK</p>
@@ -13,7 +16,7 @@ const App = () => (
             Here we can put the content of an article
             <p style={{ color: 'green' }}>Nested elements are also OK</p>
         </Article>
-    </div>
+    </Container>
 );
 
 ReactDOM.render(<App />, document.getElementById('app'));
