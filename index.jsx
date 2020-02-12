@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
 import '@telia/styleguide/index.css';
@@ -14,17 +14,25 @@ const ArticleDialog = ({ onSubmit }) => (
 
 const App = () => {
     const [displayArticle, setDisplayArticle] = useState(false);
+    const [loadingArticles, setLoadingArticles] = useState(false);
+    const [articles, setArticles] = useState([]);
+
+    const initialFetchEffect = useEffect(() => {
+        setLoadingArticles(true);
+        fetch('//workshop-blog.s3-website-eu-west-1.amazonaws.com/blog/1.json')
+        .then((res) => res.json())
+        .then(({ posts }) => {
+            setArticles(posts)
+            setLoadingArticles(false);
+        });
+    }, [])
 
     return (
         <Container>
-            <Article onOpen={() => setDisplayArticle(true)} title="My awesome article" tags={[ 'article', 'about', 'stuff' ]}>
-                Here we can put the content of an article
-                <p style={{ color: 'green' }}>Nested elements are also OK</p>
-            </Article>
-            <Article onOpen={() => setDisplayArticle(true)} title="My awesome article" tags={[ 'article', 'about', 'stuff' ]}>
-                Here we can put the content of an article
-                <p style={{ color: 'green' }}>Nested elements are also OK</p>
-            </Article>
+            {loadingArticles ? "Loading articles..." : articles.map(({ title, tags, blurb}) =>
+                <Article onOpen={() => setDisplayArticle(true)} title={title} tags={tags}>
+                    {blurb}
+                </Article>)}
             {displayArticle && <ArticleDialog onSubmit={() => setDisplayArticle(false)} />}
         </Container>
     );
