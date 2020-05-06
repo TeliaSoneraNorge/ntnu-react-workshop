@@ -284,12 +284,16 @@ body {
   color: #990AE3; }
 
 .person-gallery {
-  height: 80%; }
+  height: 80%; 
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
   .person-gallery .mugshot {
-    display: inline-block; }
+    text-align: center;
+  }
     .person-gallery .mugshot .image {
-      height: 10rem;
-      display: block; }
+      height: 10rem; }
     .person-gallery .mugshot .name {
       text-align: center;
       font-size: 1rem; }
