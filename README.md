@@ -58,7 +58,7 @@ The complete version of the source code can be seen by switching to the `1-basic
 
 Most of the time we try to reuse existing code to speed up our development process. In this second part we will use Telia's styleguide to style our list of articles by reusing already existing components.
 
-The styleguide can be accessed on this URL: http://styleguide.channelapi.telia.no/
+The styleguide can be accessed on this URL: http://styleguide.channelapi.telia.no/storybook
 
 The complete version of the source code can be seen by switching to the `2-with-component-lib` branch by running `git checkout 2-with-component-lib` in your terminal.
 
